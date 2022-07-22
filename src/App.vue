@@ -1,11 +1,16 @@
 <template>
   <div>
+    <BaseHeader />
   </div>
 </template>
 
 <script>
+import BaseHeader from './components/BaseHeader.vue'
 export default {
-  name: 'DC Comics',
+  name: 'DComics',
+  components : {
+    BaseHeader
+  }
 }
 </script>
 
