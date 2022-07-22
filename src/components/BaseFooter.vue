@@ -54,6 +54,40 @@
             </div> 
         </nav>
     </div>
+    <div class="bg-dark">
+        <div class="container">
+            <nav class="footer-nav-bottom">
+                <div class="button-blue">
+                    <a href="#">
+                        <h3>SING-UP NOW!</h3>
+                    </a>
+                </div>
+                <div class="social">
+                    <div>
+                        <h3>FOLLOW US</h3>
+                    </div>
+                    <figure>
+                        <a href="#">
+                            <img src="../assets/img/footer-facebook.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="../assets/img/footer-twitter.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="../assets/img/footer-youtube.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="../assets/img/footer-pinterest.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="../assets/img/footer-periscope.png" alt="">
+                        </a>
+                    </figure>
+                </div>
+            </nav>
+
+        </div>
+    </div>
   </footer>
 </template>
 
@@ -105,5 +139,39 @@ footer{
 .footer-col-sm ul li a {
     color: #959587;
     font-size: 18px;
+}
+
+.bg-dark{
+    background-color: #1C1C1C;
+}
+
+.footer-nav-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button-blue{
+    border: 2px solid #0282F9;
+    margin: 50px 0;
+}
+
+.button-blue a h3{
+    padding: 15px;
+    color: #fff;
+}
+
+.social{
+    display: flex;
+    align-items: center;
+}
+
+.social h3{
+    color: #0282F9;
+    margin-right: 10px;
+}
+
+.social figure a img{
+    margin: 0 10px;
 }
 </style>
