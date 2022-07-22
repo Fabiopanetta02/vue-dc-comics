@@ -96,81 +96,82 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+@import "../assets/sass/vars";
 footer{
     background-image: url(../assets/img/footer-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-}
 
-.footer-nav{
-    display: flex;
-}
+    .footer-nav {
+        display: flex;
 
-.footer-col{
-    flex-basis: calc(100% / 2);
-    display: flex;
-}
+        .footer-col{
+            flex-basis: calc(100% / 2);
+            display: flex;
+            
+            .footer-col-sm{
+                padding: 50px 0;
+                flex-basis: calc(100% / 3);
+                color: $white;
+            }
 
-.footer-col-figure{
-    justify-content: flex-end;
-}
+            .footer-col-sm h4{
+                padding-bottom: 20px;
+                font-size: 24px;
+            }
 
-.footer-col-sm{
-    padding: 50px 0;
-    flex-basis: calc(100% / 3);
-    color: #fff;
-}
+            .footer-col-sm ul{
+                padding-bottom: 20px;
+            }
 
-.footer-col-sm h4{
-    padding-bottom: 20px;
-    font-size: 24px;
-}
+            .footer-col-sm ul li{
+                margin-bottom: 5px;
+            }
 
-.footer-col-sm ul{
-    padding-bottom: 20px;
-}
+            .footer-col-sm ul li a {
+                color: $light_grey;
+                font-size: 18px;
+            }
+        
+            &.footer-col-figure{
+                justify-content: flex-end;
+            }
+        }
+    }
 
-.footer-col-sm ul li{
-    margin-bottom: 5px;
-}
+    .bg-dark {
+        background-color: $bg_dark;
 
-.footer-col-sm ul li a {
-    color: #959587;
-    font-size: 18px;
-}
+        .footer-nav-bottom{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
 
-.bg-dark{
-    background-color: #1C1C1C;
-}
+            .button-blue{
+                border: 2px solid $active_color;
+                margin: 50px 0;
 
-.footer-nav-bottom{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+                a h3 {
+                    padding: 15px;
+                    color: $white;
+                }
+            }
 
-.button-blue{
-    border: 2px solid #0282F9;
-    margin: 50px 0;
-}
+            .social{
+                display: flex;
+                align-items: center;
 
-.button-blue a h3{
-    padding: 15px;
-    color: #fff;
-}
+                h3{
+                    color: $active_color;
+                    margin-right: 10px;
+                }  
 
-.social{
-    display: flex;
-    align-items: center;
-}
-
-.social h3{
-    color: #0282F9;
-    margin-right: 10px;
-}
-
-.social figure a img{
-    margin: 0 10px;
+                figure a img{
+                    margin: 0 10px;
+                }
+            }
+        }
+    }
 }
 </style>

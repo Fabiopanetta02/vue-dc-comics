@@ -14,10 +14,11 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+@import "../assets/sass/vars";
 .top-main{
-    background-color: #1C1C1C;
+    background-color: $bg_dark;
     padding: 50px 0;
-    color: #fff;
+    color: $white;
 }
 </style>

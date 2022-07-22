@@ -80,44 +80,44 @@ export default {
 }
 </script>
 
-<style scoped>
-.top-header{
-    background-color: #1C1C1C;
+<style lang="scss" scoped>
+@import "../assets/sass/vars";
+.top-header {
+    background-color: $bg_dark;
     height: 3vh;
 }
 
-nav{
+nav {
     padding: 20px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
 
-ul {
+    ul {
     display: flex;
     align-items: center;
     height: 107px;
-}
 
-ul li {
+    li {
     font-weight: bold;
     height: 100%;
     display: flex;
     align-items: center;
     cursor: pointer;
-}
+        &.active,
+        &:hover {
+           border-bottom: 5px solid $active_color; 
+        }
 
-ul li a{
-    padding: 0px 10px;
-}
+    a {
+        padding: 0px 10px;
 
-ul li.active,
-ul li:hover{
-    border-bottom: 5px solid #0282F9;
+        &.active,
+        &:hover {
+            color: $active_color;
+        }
+    }
+    }
 }
-
-ul li a.active,
-ul li a:hover{
-    color: #0282F9;
 }
 </style>
