@@ -33,8 +33,8 @@ export default {
 
 <style scoped>
 .top-header{
-    background-color: #000;
-    height: 5vh;
+    background-color: #1C1C1C;
+    height: 3vh;
 }
 
 nav{
