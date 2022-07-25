@@ -136,6 +136,12 @@ footer{
         
             &.footer-col-figure{
                 justify-content: flex-end;
+                
+                img{
+                    height: 505px;
+                    width: 600px;
+                    object-fit: cover;
+                }
             }
         }
     }
