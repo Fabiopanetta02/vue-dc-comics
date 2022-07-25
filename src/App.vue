@@ -3,6 +3,7 @@
     <BaseHeader />
     <main>
       <ProductSection :products="products"/>
+      <BottomSection />
     </main>
     <BaseFooter />
   </div>
@@ -11,12 +12,14 @@
 <script>
 import BaseHeader from './components/BaseHeader.vue';
 import ProductSection from './components/ProductSection.vue';
+import BottomSection from './components/BottomSection.vue';
 import BaseFooter from './components/BaseFooter.vue'
 export default {
   name: 'DComics',
   components : {
     BaseHeader,
     ProductSection,
+    BottomSection,
     BaseFooter
   },
   data(){
