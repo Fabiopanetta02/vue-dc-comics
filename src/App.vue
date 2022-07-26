@@ -97,7 +97,7 @@ export default {
             series: "Catwoman",
             type: "graphic novel"
           }
-        ]
+      ]
     }
   }
 }
